@@ -24,3 +24,21 @@
     text-transform: uppercase;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 118px 60px;
+    max-width: 480px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__title {
+      font-size: 26px;
+      line-height: 1.62;
+    }
+  }
+}
