@@ -1,0 +1,62 @@
+.team {
+  background-color: $third-bg-color;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+  }
+
+  &__content {
+    padding: 30px 0;
+    @extend %box-shadow;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $bg-color;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    color: $auxiliary-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-transform: none;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}
+
+.icon-social__link {
+  fill: $border-clients;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  @include transition(fill);
+  @include transition(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $bg-color;
+  }
+}
+
+.icon-social--size {
+  width: 20px;
+  height: 20px;
+}

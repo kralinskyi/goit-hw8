@@ -1,0 +1,64 @@
+.header {
+  position: fixed;
+  min-height: 80px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $bg-color;
+  border-bottom: 1px solid $border-color;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+    margin-left: auto;
+  }
+
+  &__nav {
+    margin-left: 93px;
+  }
+}
+
+.header__link {
+  padding: 32px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $auxiliary-color;
+  @include transition();
+
+  &--contact {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    @include transition();
+
+    color: $primary-text-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon--envelope {
+  width: 16px;
+  height: 12px;
+  fill: currentColor;
+  margin: auto;
+}
+
+.icon--vector {
+  width: 10px;
+  height: 16px;
+  fill: currentColor;
+}

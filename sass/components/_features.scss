@@ -1,0 +1,27 @@
+.features__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.features__icon {
+  margin-bottom: 30px;
+  padding: 25px 100px;
+
+  background: $third-bg-color;
+
+  &--size {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.features__subtitle {
+  margin-bottom: 10px;
+
+  color: $auxiliary-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
