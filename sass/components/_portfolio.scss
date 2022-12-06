@@ -62,7 +62,7 @@
 
   &__description {
     padding: 20px 24px;
-    @include border($portfolio-border-color);
+    @include border(1px, $portfolio-border-color);
     border-top: none;
   }
 

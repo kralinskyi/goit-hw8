@@ -63,3 +63,27 @@
     color: $bg-color;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__social {
+    margin: 0;
+  }
+
+  .footer__icon-social {
+    margin-bottom: 60px;
+  }
+
+  .address__list {
+    margin-bottom: 60px;
+  }
+
+  .address__item {
+    margin-bottom: 8px;
+  }
+}

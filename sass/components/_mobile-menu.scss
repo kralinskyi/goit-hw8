@@ -1,0 +1,78 @@
+.mobile-menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  fill: $title-text-color;
+  @include transition(fill);
+
+  &:hover .burger-menu__icon,
+  &:hover .close-menu__icon,
+  &:focus .burger-menu__icon,
+  &:focus .close-menu__icon {
+    fill: $accent-color;
+  }
+}
+
+// .mobile-menu__button.is-open .close-menu__icon {
+//   display: block;
+// }
+
+// .mobile-menu__button.is-open .burger-menu__icon {
+//   display: none;
+// }
+
+// .close-menu__icon {
+//   display: none;
+// }
+
+.navigation,
+.contacts {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu__social-links {
+  display: flex;
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $bg-color;
+  z-index: 3;
+
+  transform: translateX(100%);
+  @include transition(transform);
+
+  list-style: none;
+  color: $auxiliary-color;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  //   color: $auxiliary-color;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 481px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}

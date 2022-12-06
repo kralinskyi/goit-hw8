@@ -38,6 +38,24 @@
   }
 }
 
+@media screen and (max-width: 480px) {
+  .team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+
+    margin-bottom: 30px;
+  }
+
+  .team__list {
+    display: block;
+
+    &-item:not(last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 .icon-social__link {
   fill: $border-clients;
   width: 44px;

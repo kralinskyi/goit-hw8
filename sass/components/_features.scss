@@ -4,6 +4,12 @@
   column-gap: 30px;
 }
 
+@media screen and (max-width: 480px) {
+  .features__list {
+    display: block;
+  }
+}
+
 .features__icon {
   margin-bottom: 30px;
   padding: 25px 100px;
@@ -13,6 +19,15 @@
   &--size {
     width: 70px;
     height: 70px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features__icon--size {
+    margin: 0 auto;
+  }
+  .features__subtitle {
+    text-align: center;
   }
 }
 

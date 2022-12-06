@@ -41,7 +41,7 @@
   height: 30px;
 
   border-radius: 50%;
-  @include border(rgba(0, 0, 0, 0.1));
+  @include border(1px, rgba(0, 0, 0, 0.1));
   cursor: pointer;
   outline: none;
 
@@ -130,7 +130,7 @@
 }
 
 .form-field__input {
-  @include border(rgba(33, 33, 33, 0.2));
+  @include border(1px, rgba(33, 33, 33, 0.2));
   border-radius: 4px;
   outline: transparent;
 
@@ -151,7 +151,7 @@
 }
 
 .form-field__comment {
-  @include border(rgba(33, 33, 33, 0.2));
+  @include border(1px, rgba(33, 33, 33, 0.2));
   border-radius: 4px;
   outline: transparent;
 
@@ -236,4 +236,31 @@
 .backdrop-form__button {
   padding: 10px 52px;
   min-width: 200px;
+}
+
+@media screen and (max-width: 480px) {
+  .backdrop__modal {
+    width: 450px;
+    height: 609px;
+  }
+
+  .form-field {
+    flex-direction: column;
+  }
+
+  .form-field__comment {
+    width: auto;
+  }
+
+  .checkbox__label {
+    font-size: 12px;
+  }
+
+  .checkbox__policy {
+    font-size: 12px;
+  }
+
+  .checkbox__link {
+    font-size: 12px;
+  }
 }

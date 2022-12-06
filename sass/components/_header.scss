@@ -1,6 +1,6 @@
 .header {
   position: fixed;
-  min-height: 80px;
+  height: 60px;
   width: 100%;
   top: 0;
   left: 0;
@@ -61,4 +61,24 @@
   width: 10px;
   height: 16px;
   fill: currentColor;
+}
+
+@media screen and (max-width: 480px) {
+  .header__nav,
+  .header__list {
+    display: none;
+  }
+
+  .header {
+    width: 480px;
+    height: 60px;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
 }
