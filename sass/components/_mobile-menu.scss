@@ -114,7 +114,8 @@
 }
 
 @media screen and (min-width: 481px) {
-  .mobile-menu {
+  .mobile-menu,
+  .mobile-menu__button {
     display: none;
   }
 }
@@ -122,10 +123,4 @@
 .mobile-menu .link {
   display: block;
   text-decoration: none;
-}
-
-@media screen and (min-width: 481px) {
-  .mobile-menu__button {
-    display: none;
-  }
 }
