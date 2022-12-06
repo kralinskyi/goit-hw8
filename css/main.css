@@ -582,12 +582,6 @@ svg {
   max-width: 100%;
   height: auto;
 }
-@media screen and (max-width: 480px) {
-  img,
-svg {
-    width: 100%;
-  }
-}
 
 button {
   display: block;
