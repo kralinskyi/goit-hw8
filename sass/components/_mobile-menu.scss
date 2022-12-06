@@ -113,6 +113,12 @@
   }
 }
 
+@media screen and (min-width: 481px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu .link {
   display: block;
   text-decoration: none;
