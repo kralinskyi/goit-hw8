@@ -7,6 +7,12 @@ body {
   background-color: $bg-color;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
 h1,
 h2,
 h3,
