@@ -1517,6 +1517,9 @@ button {
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
 }
+.navigation__link--curent {
+  color: #2196f3;
+}
 .navigation-list__item:not(last-child) {
   margin-bottom: 32px;
 }
