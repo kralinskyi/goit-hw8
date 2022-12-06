@@ -44,10 +44,9 @@
     &:focus {
       color: $accent-color;
     }
-  }
-
-  &__link--curent {
-    color: $accent-color;
+    &--current {
+      color: $accent-color;
+    }
   }
 
   &-list__item:not(last-child) {
