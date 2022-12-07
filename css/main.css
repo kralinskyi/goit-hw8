@@ -1537,7 +1537,7 @@ button {
   min-width: 200px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .backdrop__modal {
     width: 450px;
     height: 609px;
