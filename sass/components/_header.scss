@@ -70,7 +70,7 @@
   }
 
   .header {
-    width: 480px;
+    max-width: 480px;
     height: 60px;
 
     &__container {
@@ -78,5 +78,34 @@
       align-items: center;
       justify-content: space-between;
     }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .header {
+    max-width: 768px;
+
+    &__container {
+      height: 80px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__link {
+      padding: 0;
+    }
+
+    &__list {
+      flex-direction: column;
+      row-gap: 10px;
+      margin-left: auto;
+    }
+  }
+
+  .icon--envelope,
+  .icon--vector {
+    display: none;
   }
 }

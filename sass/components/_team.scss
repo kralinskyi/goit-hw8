@@ -56,6 +56,21 @@
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .about {
+    display: none;
+  }
+
+  .team__list {
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &-item {
+      width: 354px;
+    }
+  }
+}
+
 .icon-social__link {
   fill: $border-clients;
   width: 44px;

@@ -42,7 +42,7 @@ button {
   padding-bottom: 94px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -55,15 +55,15 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 
-  @include phone {
-    width: 480px;
-  }
-  @include tablet {
-    width: 768px;
-  }
-  @include desktop {
-    width: 1200px;
-  }
+  // @include phone {
+  //   width: 480px;
+  // }
+  // @include tablet {
+  //   width: 768px;
+  // }
+  // @include desktop {
+  //   width: 1200px;
+  // }
 }
 
 .list {
@@ -89,6 +89,12 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section__title {
+    font-size: 28px;
+  }
 }
 
 .section--top {

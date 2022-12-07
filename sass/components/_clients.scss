@@ -47,3 +47,15 @@
     gap: 30px;
   }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
+
+  .clients__list {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
