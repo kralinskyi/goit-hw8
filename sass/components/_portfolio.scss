@@ -38,6 +38,10 @@
     row-gap: 15px;
     justify-content: start;
   }
+
+  @media screen and (max-width: 481px) and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 }
 
 .hidden-area {
@@ -106,5 +110,15 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .gallery__link {
+    width: 354px;
+  }
+
+  .gallery__description {
+    height: 146px;
   }
 }
