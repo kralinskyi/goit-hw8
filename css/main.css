@@ -743,8 +743,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
   }
 }
 .logo {
@@ -761,6 +759,8 @@ button {
 @media screen and (max-width: 480px) {
   .logo {
     font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 .nav__list {
@@ -1501,6 +1501,23 @@ button {
   }
 }
 .mobile-menu__button {
+  border: none;
+  background-color: transparent;
+  fill: #000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__button:hover .burger-menu__icon, .mobile-menu__button:hover .close-menu__icon, .mobile-menu__button:focus .burger-menu__icon, .mobile-menu__button:focus .close-menu__icon {
+  fill: #2196f3;
+}
+.mobile-menu__button--close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  padding: 0;
+}
+
+.mobile-menu__button--close {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -1511,7 +1528,7 @@ button {
   fill: #000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mobile-menu__button:hover .burger-menu__icon, .mobile-menu__button:hover .close-menu__icon, .mobile-menu__button:focus .burger-menu__icon, .mobile-menu__button:focus .close-menu__icon {
+.mobile-menu__button--close:hover .burger-menu__icon, .mobile-menu__button--close:hover .close-menu__icon, .mobile-menu__button--close:focus .burger-menu__icon, .mobile-menu__button--close:focus .close-menu__icon {
   fill: #2196f3;
 }
 
