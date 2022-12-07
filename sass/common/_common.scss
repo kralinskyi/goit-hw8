@@ -55,15 +55,9 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 
-  // @include phone {
-  //   width: 480px;
-  // }
-  // @include tablet {
-  //   width: 768px;
-  // }
-  // @include desktop {
-  //   width: 1200px;
-  // }
+  @media screen and (min-width: 1170px) {
+    width: 1200px;
+  }
 }
 
 .list {

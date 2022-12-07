@@ -607,6 +607,11 @@ button {
   padding-left: 15px;
   padding-right: 15px;
 }
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .list {
   margin: 0;
@@ -1135,6 +1140,10 @@ button {
   color: #fff;
 }
 
+.footer__tablet {
+  display: flex;
+}
+
 @media screen and (max-width: 480px) {
   .footer__container {
     flex-direction: column;
@@ -1156,7 +1165,6 @@ button {
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .footer__tablet {
-    display: flex;
     margin-bottom: 60px;
   }
   .footer__container {
