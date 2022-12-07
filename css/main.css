@@ -1167,6 +1167,9 @@ button {
   .footer__tablet {
     margin-bottom: 60px;
   }
+  .footer__social {
+    margin-left: 165px;
+  }
   .footer__container {
     flex-direction: column;
     align-items: center;
