@@ -57,13 +57,10 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .about {
-    display: none;
-  }
-
   .team__list {
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center;
 
     &-item {
       width: 354px;

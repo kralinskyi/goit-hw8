@@ -122,6 +122,10 @@
   &--item {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+
+  &.is-open {
+    pointer-events: all;
+  }
 }
 
 @media screen and (min-width: 481px) {
