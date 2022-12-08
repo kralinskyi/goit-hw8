@@ -113,7 +113,7 @@
   background-color: $bg-color;
   z-index: 3;
 
-  transform: translateX(100%);
+  transform: translateX(150%);
   @include transition(transform);
 
   list-style: none;
@@ -128,7 +128,7 @@
   }
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu__button {
     display: none;

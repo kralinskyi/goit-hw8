@@ -1,5 +1,5 @@
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   color: $primary-text-color;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -92,8 +92,9 @@ button {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 
-  @media screen and (max-width: 1169px) {
+  @media screen and (max-width: 1199px) {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
@@ -115,7 +116,7 @@ button {
   color: $title-color;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
