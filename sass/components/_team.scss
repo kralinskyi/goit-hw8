@@ -2,15 +2,20 @@
   background-color: $third-bg-color;
   text-align: center;
 
-  &__title {
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
   &__list {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
+    @include tablet {
+      gap: 30px;
+      display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      display: flex;
+
+      margin-left: -15px;
+      margin-right: -15px;
+    }
   }
 
   &__content {
@@ -39,18 +44,8 @@
 }
 
 @media screen and (max-width: 480px) {
-  .team__title {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.18;
-
-    margin-bottom: 30px;
-  }
-
   .team__list {
-    display: block;
-
-    &-item:not(last-child) {
+    &-item:not(:last-child) {
       margin-bottom: 30px;
     }
   }
@@ -58,10 +53,6 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .team__list {
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-
     &-item {
       width: 354px;
     }

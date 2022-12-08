@@ -7,6 +7,10 @@ body {
   background-color: $bg-color;
 }
 
+.body.is-open {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 480px) {
   body {
     padding-top: 60px;
@@ -38,14 +42,13 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-@media screen and (max-width: 768px) {
-  .section {
+  @media screen and (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -88,17 +91,18 @@ button {
   color: $auxiliary-color;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2;
-}
+  line-height: 1.16;
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .section__title {
+  @media screen and (max-width: 1169px) {
+    font-weight: 700;
     font-size: 28px;
-  }
-}
+    line-height: 1.17;
 
-.section--top {
-  padding-top: 0;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 30px;
+  }
 }
 
 .button {

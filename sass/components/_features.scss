@@ -1,12 +1,8 @@
-.features__list {
-  display: flex;
-  flex-direction: row;
-  column-gap: 30px;
-}
-
 .features__icon {
   margin-bottom: 30px;
   padding: 25px 100px;
+  display: flex;
+  justify-content: center;
 
   background: $third-bg-color;
 
@@ -22,31 +18,54 @@
   color: $auxiliary-color;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.14;
   text-transform: uppercase;
-}
 
-@media screen and (max-width: 480px) {
-  .features__list {
-    display: block;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
   }
-
-  .features__icon--size {
-    margin: 0 auto;
+  @include tablet {
+    width: 270px;
   }
-
-  .features__subtitle {
-    text-align: center;
+  @include desktop {
+    text-align: left;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .features__list {
-    flex-wrap: wrap;
+.features__list {
+  padding: 0;
+  @include tablet {
     gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    gap: 30px;
+  }
 
-    & li {
+  &--item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+    @include tablet {
       width: 354px;
     }
+    @include desktop {
+      width: 270px;
+    }
+  }
+}
+
+.features__text {
+  @include phone {
+    width: 480px;
+  }
+  @include tablet {
+    width: 354px;
+  }
+  @include desktop {
+    width: 270px;
   }
 }

@@ -115,18 +115,18 @@
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list features__list">
-            <li>
+            <li class="features__list--item">
               <div class="features__icon">
                 <svg class="features__icon--size">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
               <h3 class="features__subtitle">УВАГА ДО ДЕТАЛЕЙ</h3>
-              <p class="text">
+              <p class="text features__text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li>
+            <li class="features__list--item">
               <div class="features__icon">
                 <svg class="features__icon--size">
                   <use href="./images/icons.svg#clock"></use>
@@ -137,7 +137,7 @@
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="features__list--item">
               <div class="features__icon">
                 <svg class="features__icon--size">
                   <use href="./images/icons.svg#diagram"></use>
@@ -146,7 +146,7 @@
               <h3 class="features__subtitle">ПЛАНУВАННЯ</h3>
               <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
             </li>
-            <li>
+            <li class="features__list--item">
               <div class="features__icon">
                 <svg class="features__icon--size">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -161,7 +161,7 @@
         </div>
       </section>
       <!-- Section Чим ми займаємося -->
-      <section class="about section section--top">
+      <section class="about section">
         <div class="container">
           <h2 class="section__title about__title">Чим ми займаємося</h2>
           <ul class="list about__list">
@@ -195,7 +195,7 @@
       <!-- Section Наша команда -->
       <section class="team section">
         <div class="container">
-          <h2 class="section__title team__title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__list-item">
               <img
@@ -403,44 +403,44 @@
       <!-- Section Постійні клієнти -->
       <section class="clients section">
         <div class="container">
-          <h2 class="section__title clients__title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="list clients__list">
-            <li>
+            <li class="clients__item">
               <a href="https://www.google.com/" class="link clients__link">
                 <svg class="clients__icon">
                   <use href="./images/icons.svg#Logo"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="https://www.google.com/" class="link clients__link">
                 <svg class="clients__icon">
                   <use href="./images/icons.svg#Logo1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="https://www.google.com/" class="link clients__link">
                 <svg class="clients__icon">
                   <use href="./images/icons.svg#Logo2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="https://www.google.com/" class="link clients__link">
                 <svg class="clients__icon">
                   <use href="./images/icons.svg#Logo3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="https://www.google.com/" class="link clients__link">
                 <svg class="clients__icon">
                   <use href="./images/icons.svg#Logo4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a href="https://www.google.com/" class="link clients__link">
                 <svg class="clients__icon">
                   <use href="./images/icons.svg#Logo5"></use>
@@ -454,77 +454,74 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__tablet">
-          <div>
-            <div class="footer__logo">
-              <a href="./index.html" class="logo link"
-                ><span class="logo__accent">Web</span><span class="footer__logo">Studio</span></a
-              >
-            </div>
-            <address class="address">
-              <ul class="list address__list">
-                <li class="address__item">
-                  <a href="https://goo.gl/maps/7TsU5v6dtKKERjYw9" class="link address__item--link"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a href="mailto:info@devstudio.com" class="address__contact link"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a href="tel:+380961111111" class="address__contact link">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="footer__social">
-            <p class="footer__social--text">Приєднуйтесь</p>
-            <ul class="list icon-social footer__icon-social">
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  class="link icon-social__link footer__social--link"
+        <div class="footer__set-container">
+          <a href="./index.html" class="logo link footer__logo"
+            ><span class="logo__accent">Web</span><span class="footer__logo">Studio</span></a
+          >
+
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">
+                <a href="https://goo.gl/maps/7TsU5v6dtKKERjYw9" class="link address__item--link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
               </li>
-              <li>
-                <a href="https://twitter.com/" class="link icon-social__link footer__social--link">
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  class="link icon-social__link footer__social--link"
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__contact link"
+                  >info@devstudio.com</a
                 >
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  class="link icon-social__link footer__social--link"
-                >
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__contact link">+38 096 111 11 11</a>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
-        <form action="email" class="form">
-          <p class="form__text">Підпишіться на розсилку</p>
-          <div class="form__input">
+        <div class="footer__social">
+          <p class="footer__social--text">Приєднуйтесь</p>
+          <ul class="list icon-social footer__icon-social">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                class="link icon-social__link footer__social--link"
+              >
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="link icon-social__link footer__social--link">
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                class="link icon-social__link footer__social--link"
+              >
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                class="link icon-social__link footer__social--link"
+              >
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form action="email" class="footer-form">
+          <p class="footer-form__text">Підпишіться на розсилку</p>
+          <div class="footer-form__container">
             <label class="form__label">
               <input class="form__email" type="email" placeholder="E-mail" required />
             </label>
