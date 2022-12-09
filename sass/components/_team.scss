@@ -43,18 +43,10 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__list {
     &-item:not(:last-child) {
       margin-bottom: 30px;
-    }
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .team__list {
-    &-item {
-      width: 354px;
     }
   }
 }
