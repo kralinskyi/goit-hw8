@@ -653,6 +653,7 @@ button {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1199px) {
   .section__title {
@@ -661,7 +662,6 @@ button {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
   }
 }
 
@@ -1262,7 +1262,7 @@ button {
 }
 @media screen and (min-width: 480px) {
   .clients__icon {
-    max-width: 210px;
+    width: 210px;
   }
 }
 @media screen and (min-width: 1200px) {

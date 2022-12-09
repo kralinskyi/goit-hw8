@@ -66,7 +66,7 @@
   height: 60px;
   height: 92px;
   @include phone {
-    max-width: 210px;
+    width: 210px;
   }
   @include desktop {
     max-width: 170px;
