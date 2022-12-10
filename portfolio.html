@@ -11,13 +11,10 @@
     <!-- Header -->
     <header class="header">
       <div class="container header__container">
-        <a href="./index.html" class="logo link"><span class="logo__accent">Web</span>Studio</a>
-        <button
-          type="button"
-          class="mobile-menu__button js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
+        <a href="./index.html" class="logo link header-logo"
+          ><span class="logo__accent">Web</span>Studio</a
         >
+        <button type="button" class="mobile-menu__button js-open-menu" aria-controls="mobile-menu">
           <svg width="40" height="40" aria-label="перемикач мобільного меню">
             <use
               class="burger-menu__icon js-close-menu"
@@ -59,23 +56,25 @@
           </li>
         </ul>
         <div class="mobile-menu js-menu-container">
-          <button type="button" class="mobile-menu__button js-close-menu">
+          <button type="button" class="mobile-menu__button--close js-close-menu">
             <svg width="40" height="40">
               <use class="close-menu__icon" href="./images/mobile-menu-icons.svg#close_menu"></use>
             </svg>
           </button>
-          <ul class="list navigation">
-            <li class="navigation-list__item">
-              <a href="./index.html" class="link navigation__link">Студія</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="./portfolio.html" class="link navigation__link navigation__link--current"
-                >Портфоліо</a
-              >
-            </li>
-            <li class="navigation-list__item">
-              <a href="" class="link navigation__link">Контакти</a>
-            </li>
+          <div class="mobile-menu-flex">
+            <ul class="list navigation">
+              <li class="navigation-list__item">
+                <a href="./index.html" class="link navigation__link navigation__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation-list__item">
+                <a href="./portfolio.html" class="link navigation__link">Портфоліо</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="" class="link navigation__link">Контакти</a>
+              </li>
+            </ul>
             <ul class="list contacts">
               <li>
                 <a href="tel:+380961111111" class="link contacts__tel"> +38 096 111 11 11</a>
@@ -100,7 +99,7 @@
                 <a href="" class="link mobile-menu__social-links--item">LinkedIn</a>
               </li>
             </ul>
-          </ul>
+          </div>
         </div>
       </div>
     </header>

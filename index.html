@@ -61,18 +61,20 @@
               <use class="close-menu__icon" href="./images/mobile-menu-icons.svg#close_menu"></use>
             </svg>
           </button>
-          <ul class="list navigation">
-            <li class="navigation-list__item">
-              <a href="./index.html" class="link navigation__link navigation__link--current"
-                >Студія</a
-              >
-            </li>
-            <li class="navigation-list__item">
-              <a href="./portfolio.html" class="link navigation__link">Портфоліо</a>
-            </li>
-            <li class="navigation-list__item">
-              <a href="" class="link navigation__link">Контакти</a>
-            </li>
+          <div class="mobile-menu-flex">
+            <ul class="list navigation">
+              <li class="navigation-list__item">
+                <a href="./index.html" class="link navigation__link navigation__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="navigation-list__item">
+                <a href="./portfolio.html" class="link navigation__link">Портфоліо</a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="" class="link navigation__link">Контакти</a>
+              </li>
+            </ul>
             <ul class="list contacts">
               <li>
                 <a href="tel:+380961111111" class="link contacts__tel"> +38 096 111 11 11</a>
@@ -97,7 +99,7 @@
                 <a href="" class="link mobile-menu__social-links--item">LinkedIn</a>
               </li>
             </ul>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -536,7 +538,7 @@
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-      <div class="backdrop__modal">
+      <div class="backdrop__modal modal">
         <button type="button" name="close" class="close-button" data-modal-close>
           <svg class="close-button__icon">
             <use href="./images/modal-icons/close.svg#close"></use>

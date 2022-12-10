@@ -15,16 +15,12 @@
 }
 
 .clients__item {
-  height: 92px;
-
   @media screen and (max-width: 479px) {
     margin-top: 0;
     width: 210px;
     margin: 0 auto;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 226px;
-  }
+
   @media screen and (min-width: 1200px) {
     width: 170px;
   }
@@ -39,20 +35,14 @@
 .clients__link {
   @include border(1px, currentColor);
   border-radius: 4px;
-  max-width: 170px;
-  height: 92px;
+  width: 100%;
+  // height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   color: $border-clients;
 
   @include transition();
-
-  @media screen and (max-width: 767px) {
-    max-width: 210px;
-  }
-  @media screen and (min-width: 768px) {
-  }
 
   &:hover,
   &:focus,
