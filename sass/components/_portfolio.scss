@@ -96,7 +96,6 @@
 }
 
 .gallery li {
-  width: 100%;
   @media (min-width: 768px) {
     width: calc((100% - 1 * 30px) / 2);
   }

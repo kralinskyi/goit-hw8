@@ -1610,9 +1610,6 @@ button {
   color: #757575;
 }
 
-.gallery li {
-  width: 100%;
-}
 @media (min-width: 768px) {
   .gallery li {
     width: calc((100% - 30px) / 2);
