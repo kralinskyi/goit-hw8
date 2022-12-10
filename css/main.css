@@ -1585,6 +1585,12 @@ button {
   background: rgba(33, 150, 243, 0.9);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .gallery__text--one {
+    margin-bottom: 36px;
+  }
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -1635,9 +1641,6 @@ button {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .gallery__link {
     width: 354px;
-  }
-  .gallery__description {
-    height: 146px;
   }
 }
 .backdrop {

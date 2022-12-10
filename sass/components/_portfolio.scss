@@ -65,6 +65,14 @@
   }
 }
 
+// костиль
+
+.gallery__text--one {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 36px;
+  }
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -123,9 +131,5 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .gallery__link {
     width: 354px;
-  }
-
-  .gallery__description {
-    height: 146px;
   }
 }
