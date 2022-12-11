@@ -79,6 +79,10 @@
   gap: 30px;
   justify-content: center;
 
+  @include tablet {
+    justify-content: start;
+  }
+
   &__description {
     flex-grow: 1;
     padding: 20px 24px;

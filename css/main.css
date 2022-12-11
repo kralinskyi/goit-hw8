@@ -1596,6 +1596,11 @@ button {
   gap: 30px;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    justify-content: start;
+  }
+}
 .gallery__description {
   flex-grow: 1;
   padding: 20px 24px;
