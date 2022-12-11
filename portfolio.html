@@ -64,12 +64,12 @@
           <div class="mobile-menu-flex">
             <ul class="list navigation">
               <li class="navigation-list__item">
-                <a href="./index.html" class="link navigation__link navigation__link--current"
+                <a href="./index.html" class="link navigation__link"
                   >Студія</a
                 >
               </li>
               <li class="navigation-list__item">
-                <a href="./portfolio.html" class="link navigation__link">Портфоліо</a>
+                <a href="./portfolio.html" class="link navigation__link navigation__link--current">Портфоліо</a>
               </li>
               <li class="navigation-list__item">
                 <a href="" class="link navigation__link">Контакти</a>
@@ -283,77 +283,74 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__tablet">
-          <div>
-            <div class="footer__logo">
-              <a href="./index.html" class="logo link"
-                ><span class="logo__accent">Web</span><span class="footer__logo">Studio</span></a
-              >
-            </div>
-            <address class="address">
-              <ul class="list address__list">
-                <li class="address__item">
-                  <a href="https://goo.gl/maps/7TsU5v6dtKKERjYw9" class="link address__item--link"
-                    >м. Київ, пр-т Лесі Українки, 26</a
-                  >
-                </li>
-                <li class="address__item">
-                  <a href="mailto:info@devstudio.com" class="address__contact link"
-                    >info@devstudio.com</a
-                  >
-                </li>
-                <li>
-                  <a href="tel:+380961111111" class="address__contact link">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </address>
-          </div>
-          <div class="footer__social">
-            <p class="footer__social--text">Приєднуйтесь</p>
-            <ul class="list icon-social footer__icon-social">
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  class="link icon-social__link footer__social--link"
+        <div class="footer__set-container">
+          <a href="./index.html" class="logo link footer__logo"
+            ><span class="logo__accent">Web</span><span class="footer__logo">Studio</span></a
+          >
+
+          <address class="address">
+            <ul class="list address__list">
+              <li class="address__item">
+                <a href="https://goo.gl/maps/7TsU5v6dtKKERjYw9" class="link address__item--link"
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#instagram"></use>
-                  </svg>
-                </a>
               </li>
-              <li>
-                <a href="https://twitter.com/" class="link icon-social__link footer__social--link">
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  class="link icon-social__link footer__social--link"
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__contact link"
+                  >info@devstudio.com</a
                 >
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#facebook"></use>
-                  </svg>
-                </a>
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/"
-                  class="link icon-social__link footer__social--link"
-                >
-                  <svg class="icon icon-social--size">
-                    <use href="./images/icons.svg#linkedin"></use>
-                  </svg>
-                </a>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__contact link">+38 096 111 11 11</a>
               </li>
             </ul>
-          </div>
+          </address>
         </div>
-        <form action="email" class="form">
-          <p class="form__text">Підпишіться на розсилку</p>
-          <div class="form__input">
+        <div class="footer__social">
+          <p class="footer__social--text">Приєднуйтесь</p>
+          <ul class="list icon-social footer__icon-social">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                class="link icon-social__link footer__social--link"
+              >
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="link icon-social__link footer__social--link">
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                class="link icon-social__link footer__social--link"
+              >
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/"
+                class="link icon-social__link footer__social--link"
+              >
+                <svg class="icon icon-social--size">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form action="email" class="footer-form">
+          <p class="footer-form__text">Підпишіться на розсилку</p>
+          <div class="footer-form__container">
             <label class="form__label">
               <input class="form__email" type="email" placeholder="E-mail" required />
             </label>
